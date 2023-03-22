@@ -3,6 +3,7 @@
     --light-brown: #D5B4B4; /*30%*/
     --tan: #E4D0D0; /*10%*/
     --beige: #F5EBEB; /*10%*/
+    --black: rgba(0,0,0,0.3);
 }
 
 * {
@@ -30,7 +31,7 @@ body {
 
 .calculator {
     background-color: var(--tan);
-    /* border: solid; */
+    box-shadow: 5px 5px 5px 0 var(--black);
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 400px;
@@ -48,6 +49,12 @@ body {
     border: none;
     background-color: var(--light-brown);
     color: var(--beige);
+}
+
+.calculator button:hover {
+    opacity: 0.5;
+    color: var(--brown);
+    box-shadow: 5px 5px 5px 0 var(--black) ;
 }
 
 .span-four {
